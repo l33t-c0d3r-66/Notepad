@@ -328,7 +328,7 @@ public class Notepad extends javax.swing.JFrame {
 
     private boolean saveFile(File file)
     {
-        try(FileWriter fw = new FileWriter(file);)
+        try(FileWriter fw = new FileWriter(file+".txt");)
 	{
            fw.write(textArea.getText());
            return true;
